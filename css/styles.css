@@ -1,6 +1,7 @@
 /*Variables*/
 
 :root {
+    --c0: #192738;
     --c1: #283e58;
     --c2: #6d597a;
     --c3: #c2677b;
@@ -35,13 +36,19 @@ a {
 
 .seccion {
     padding: 7vh 7.5vw;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 h2 {
+    font-size: 5rem;
+}
+
+h3 {
     font-size: 1.5rem;
     font-weight: normal;
 }
@@ -75,12 +82,12 @@ header {
     background-color: var(--c4);
     color: white;
     height: 7vh;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: bolder;
 }
 
 #himg {
-    height: 2rem;
+    height: 3rem;
     width: auto;
 }
 
@@ -98,15 +105,11 @@ header {
 
 #navbar>a {
     width: 100%;
+    font-size: 1.4rem;
 }
 
 
 /* Sección 1 */
-
-#presentacion {
-    display: flex;
-    flex-direction: column;
-}
 
 .s1img {
     margin: 7vh 0;
@@ -122,4 +125,16 @@ header {
     border-radius: 50%;
     /* borde */
     border: 1vh solid var(--c4);
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    background-color: var(--c0);
+    color: var(--c1);
 }
