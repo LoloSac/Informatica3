@@ -13,12 +13,12 @@
 /* Scrollbar */
 
 ::-webkit-scrollbar {
-    background-color: var(--c0);
     width: .6vw;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #39485a;
+    background-color: var(--c4);
+    border-radius: 30px;
 }
 
 
@@ -46,12 +46,6 @@ a {
     color: unset;
 }
 
-.seccion {
-    padding: 7vh 7.5vw;
-    display: flex;
-    flex-direction: column;
-}
-
 h1 {
     font-size: 2.5rem;
 }
@@ -65,13 +59,10 @@ h3 {
     font-weight: normal;
 }
 
-hr {
-    background-color: var(--c2);
-    display: block;
-    border: solid 1px var(--c2);
-    height: .1vh;
-    width: 90vw;
-    margin: 3vh auto 7vh;
+.seccion {
+    padding: 7vh 7.5vw;
+    display: flex;
+    flex-direction: column;
 }
 
 .button {
@@ -147,7 +138,7 @@ header {
     z-index: 100;
 }
 
-#navbar>a {
+#navbar a {
     width: 100%;
     font-size: 1.4rem;
 }
@@ -200,6 +191,15 @@ footer {
         display: none;
         flex-direction: column;
         position: initial;
+    }
+    #navbar a:first-child {
+        border-top: solid 1px var(--c2);
+    }
+    #navbar a {
+        padding: 2vh 0;
+        border-bottom: solid 1px var(--c2);
+        width: auto;
+        cursor: pointer;
     }
     #toggle:checked~#navbar {
         display: flex;
