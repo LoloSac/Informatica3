@@ -46,6 +46,10 @@ a {
     color: unset;
 }
 
+i {
+    font-size: 6rem;
+}
+
 h1 {
     font-size: 2.5rem;
 }
@@ -141,6 +145,12 @@ header {
 #navbar a {
     width: 100%;
     font-size: 1.4rem;
+}
+
+#redes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
 }
 
 
