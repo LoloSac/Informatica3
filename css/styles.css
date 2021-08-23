@@ -83,6 +83,7 @@ h3 {
     width: 10vw;
     top: 92vh;
     border-radius: 20px;
+    transition: background-color .1s ease-in, color .1s ease-in;
 }
 
 .button:hover {
@@ -149,8 +150,12 @@ header {
 
 #redes {
     display: flex;
-    justify-content: space-around;
-    margin-top: 5vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#redes>a {
+    margin: 5vh 5vw;
 }
 
 
@@ -203,15 +208,17 @@ footer {
         position: initial;
     }
     #navbar a:first-child {
-        border-top: solid 1px var(--c2);
+        border-top: solid 5px var(--c2);
     }
     #navbar a {
         padding: 2vh 0;
-        border-bottom: solid 1px var(--c2);
         width: auto;
         cursor: pointer;
     }
     #toggle:checked~#navbar {
         display: flex;
+    }
+    #redes {
+        flex-wrap: wrap;
     }
 }
