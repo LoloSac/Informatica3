@@ -31,6 +31,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -73,14 +74,13 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 25px 25px 50px;
+    margin: 1.5em 1.5em 3em;
     color: white;
     background-color: var(--c4);
-    padding: 1vh 1.5vh;
+    padding: 1vh 2.5vw;
     user-select: none;
     position: sticky;
     float: right;
-    width: 10vw;
     top: 92vh;
     border-radius: 20px;
     transition: background-color .1s ease-in, color .1s ease-in;
@@ -148,16 +148,6 @@ header {
     font-size: 1.4rem;
 }
 
-#redes {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#redes>a {
-    margin: 5vh 5vw;
-}
-
 
 /* Sección 1 */
 
@@ -175,6 +165,38 @@ header {
     border-radius: 50%;
     /* borde */
     border: 1vh solid var(--c4);
+}
+
+
+/* Sección 3 */
+
+#redes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#redes>a {
+    margin: 5vh 5vw;
+}
+
+
+/* Sección 4  */
+
+#futureGallery {
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: scroll;
+    margin: 5vh 0;
+}
+
+.fGalleryImg {
+    background-color: white;
+    width: 70vw;
+    height: 40vh;
+    display: inline-block;
+    margin: 0 5vw;
+    flex-shrink: 0;
 }
 
 
