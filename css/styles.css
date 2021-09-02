@@ -188,6 +188,13 @@ header {
     flex-flow: row nowrap;
     overflow-x: scroll;
     margin: 5vh 0;
+    border-left: .5vw solid var(--c0);
+    border-right: .5vw solid var(--c0);
+    border-radius: .5em;
+}
+
+#futureGallery::-webkit-scrollbar {
+    height: 1vh;
 }
 
 .fGalleryImg {
