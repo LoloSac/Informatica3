@@ -191,11 +191,11 @@ header {
 }
 
 .fGalleryImg {
-    background-color: white;
-    width: 70vw;
+    width: auto;
     height: 40vh;
     display: inline-block;
-    margin: 0 5vw;
+    box-shadow: 0 1em 10px rgba(0, 0, 0, 0.555);
+    margin: 4vh 2.5vw;
     flex-shrink: 0;
 }
 
