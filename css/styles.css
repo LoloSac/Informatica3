@@ -165,6 +165,7 @@ header {
     border-radius: 50%;
     /* borde */
     border: 1vh solid var(--c4);
+    user-select: none;
 }
 
 
@@ -176,8 +177,16 @@ header {
     align-items: center;
 }
 
-#redes>a {
+#redes a {
     margin: 5vh 5vw;
+}
+
+#redes i {
+    transition: transform .5s;
+}
+
+#redes i:hover {
+    transform: scale(1.25);
 }
 
 
@@ -198,6 +207,7 @@ header {
 }
 
 .fGalleryImg {
+    user-select: none;
     width: auto;
     height: 40vh;
     display: inline-block;
