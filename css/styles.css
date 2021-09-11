@@ -143,6 +143,11 @@ header {
 #navbar a {
     width: 100%;
     font-size: 1.4rem;
+    transition: text-shadow .25s ease-in;
+}
+
+#navbar a:hover {
+    text-shadow: white 0 0 3px;
 }
 
 
