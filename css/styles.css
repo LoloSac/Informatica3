@@ -64,24 +64,21 @@ h3 {
     font-weight: normal;
 }
 
-.seccion {
+section {
     padding: 7vh 7.5vw;
     display: flex;
     flex-direction: column;
 }
 
 .button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 1.5em 1.5em 3em;
     color: white;
     background-color: var(--c4);
     padding: 1vh 2.5vw;
     user-select: none;
     position: sticky;
-    float: right;
     top: 92vh;
+    left: 100vw;
     border-radius: 20px;
     transition: background-color .1s ease-in, color .1s ease-in;
 }
@@ -155,7 +152,7 @@ header {
     margin: 7vh 0;
     align-self: center;
     width: 80vw;
-    height: 80vw;
+    height: auto;
     /* máximo para que se vea bien en resoluciones de celular y de compu */
     max-width: 50vh;
     max-height: 50vh;
@@ -166,6 +163,13 @@ header {
     /* borde */
     border: 1vh solid var(--c4);
     user-select: none;
+}
+
+
+/* Sección 2 */
+
+#illia {
+    margin: 0;
 }
 
 
@@ -192,8 +196,9 @@ header {
 
 /* Sección 4  */
 
-#futureGallery {
+.gallery {
     display: flex;
+    width: 100%;
     flex-flow: row nowrap;
     overflow-x: scroll;
     margin: 5vh 0;
@@ -202,11 +207,11 @@ header {
     border-radius: .5em;
 }
 
-#futureGallery::-webkit-scrollbar {
+.gallery::-webkit-scrollbar {
     height: 1vh;
 }
 
-.fGalleryImg {
+.galleryImg {
     user-select: none;
     width: auto;
     height: 40vh;
@@ -264,7 +269,7 @@ footer {
     #redes {
         flex-wrap: wrap;
     }
-    .fGalleryImg {
+    .galleryImg {
         height: 20vh;
     }
 }
