@@ -171,13 +171,6 @@ header {
 }
 
 
-/* Sección 2 */
-
-#illia {
-    margin: 0;
-}
-
-
 /* Sección 3 */
 
 #redes {
@@ -199,7 +192,7 @@ header {
 }
 
 
-/* Sección 4  */
+/* Galerías */
 
 .gallery {
     display: flex;
